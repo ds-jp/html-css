@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /* Existe display block inline inline-block, no inline-block você pode mudar tamanho altura largura */
+        h1 { /* box-level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /* border: 10px solid, darkslategray */
+            padding-top: 11px;
+            padding-right: 12px;
+            padding-bottom: 13px;
+            padding-left: 14px;
+            /* padding: 11px 12px 13px 14px
+                padding: (10px todas 10)
+                padding: 10px 20px (top e bottom = 10px right e left = 20px)
+            */
+            margin-top: 15px;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+            /* margin: 15px 12px 20px 14px
+                margin 15px (todos 15px)
+                margin: 10px 20px (top e bottom = 10px right e left = 20px)
+                posso usar auto no simplificado como margin: 15px auto 20px auto
+            */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /* outline: 5px dashed salmon */
+        }
+
+        a { /* inline-level */
+            border: 10px solid red
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos são box-level, mas <a href="">links são inline-level</a>.</p>
+    <div><span>a</span></div>
+</body>
+</html>
