@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+            /* shorhand - background
+            color > image > position > repeat > attachment
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
+            att: "Da pra aplicar o size no shorthand sim. Tem que fazer desse jeito:  color > image > position > / > size > repeat > attachment. 
+
+            Exemplo:
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;"
+
+            --cover separado não está funcionando o size depois de repeat na shorthand.
+            */
+        }
+
+        main {
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            border: 1px solid darkblue;
+            margin: auto;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere ad recusandae non unde illo nobis tempora fugiat? Repellendus cum ipsam laborum in fugiat deleniti enim nobis, debitis rem vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi, natus error similique sed unde officia. Delectus error laboriosam, quod suscipit, quas natus eligendi non placeat illum assumenda nobis soluta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, veritatis molestias. Ea exercitationem ratione, beatae sit nostrum maiores rem earum laborum cupiditate asperiores omnis, voluptate qui voluptatibus repellat voluptas suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere ad recusandae non unde illo nobis tempora fugiat? Repellendus cum ipsam laborum in fugiat deleniti enim nobis, debitis rem vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi, natus error similique sed unde officia. Delectus error laboriosam, quod suscipit, quas natus eligendi non placeat illum assumenda nobis soluta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, veritatis molestias. Ea exercitationem ratione, beatae sit nostrum maiores rem earum laborum cupiditate asperiores omnis, voluptate qui voluptatibus repellat voluptas suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere ad recusandae non unde illo nobis tempora fugiat? Repellendus cum ipsam laborum in fugiat deleniti enim nobis, debitis rem vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi, natus error similique sed unde officia. Delectus error laboriosam, quod suscipit, quas natus eligendi non placeat illum assumenda nobis soluta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, veritatis molestias. Ea exercitationem ratione, beatae sit nostrum maiores rem earum laborum cupiditate asperiores omnis, voluptate qui voluptatibus repellat voluptas suscipit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facere ad recusandae non unde illo nobis tempora fugiat? Repellendus cum ipsam laborum in fugiat deleniti enim nobis, debitis rem vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi, natus error similique sed unde officia. Delectus error laboriosam, quod suscipit, quas natus eligendi non placeat illum assumenda nobis soluta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, veritatis molestias. Ea exercitationem ratione, beatae sit nostrum maiores rem earum laborum cupiditate asperiores omnis, voluptate qui voluptatibus repellat voluptas suscipit.</p>
+    </main>
+</body>
+</html>
