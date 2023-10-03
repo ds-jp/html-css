@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+            border: 1px solid black;
+            border-bottom: 0px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        /* ou
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+        */
+        
+        /* Pode se usar even (par), 2n, ou odd (ímpar), 2n-1 também funciona, ou números maiores de n como a cada 5 linhas 5n, também pode alterar separadamente a cor das ímpares e das pares tbody > tr:nth-child(even) e tbody > tr:nth-child(odd)*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+            /* font-weight: bold; */
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!-- Anatomia para tabelas grandes
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    
+    <table>
+        <caption>População das unidades federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>   
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>84.352.783</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum quo recusandae omnis voluptatibus modi accusantium at! Odio voluptatem, laborum dignissimos obcaecati, officia unde quae est optio suscipit accusantium saepe mollitia deserunt veniam expedita ipsa perferendis, ea esse fuga quam necessitatibus excepturi ducimus placeat animi. Ratione dignissimos porro excepturi magni adipisci tenetur nostrum eum laudantium totam aut rem architecto odio fugiat quo omnis, pariatur est vel, ab beatae facere impedit consequuntur culpa fugit? Possimus odit libero fuga magnam omnis harum aut tempore laboriosam nihil fugit a eaque vel debitis eius dolore ad alias nesciunt, eveniet nisi itaque, facere ea cumque. Eligendi, sed? Maxime, aliquid velit! Autem tempora, provident maxime illo numquam ut, quasi necessitatibus, modi iusto cupiditate optio quam non pariatur porro consectetur delectus odio! Dolorum recusandae delectus perspiciatis cupiditate velit, sapiente excepturi. In, cumque! Accusamus explicabo eligendi, debitis ab quis quos nesciunt dolore, perferendis adipisci, sequi illo? Quae accusantium tempore, dolores illo cumque soluta vitae hic. Deserunt aut, vel repellat fugiat quidem necessitatibus iure quod consequatur magni maxime, perferendis optio rem dolorem harum laborum assumenda accusamus illo eligendi voluptatibus tenetur culpa esse rerum sed amet! Voluptatum hic facere ab dolorum ad necessitatibus, aliquid magni harum maiores accusamus, asperiores nesciunt, cumque aspernatur quas soluta deleniti et suscipit aperiam. Voluptate excepturi neque explicabo minus tempore! Doloremque, ex illo? Quam recusandae veniam enim mollitia nobis odio dolor, repellendus doloribus dicta eveniet, ipsum culpa ducimus laboriosam tempore. Debitis odit nihil minus quasi incidunt, cum molestiae unde accusamus, harum consequatur qui, delectus illum nulla quam! Veritatis, explicabo quibusdam, temporibus, accusamus hic aliquid eos maxime nostrum amet vel officia molestiae! Id modi nam iste, possimus earum similique quidem explicabo doloremque veniam distinctio eligendi accusantium atque qui esse veritatis molestias perferendis itaque laudantium est obcaecati neque quia! Expedita officia sapiente, culpa assumenda voluptate numquam odio dolorem, unde inventore, fugit obcaecati animi. Omnis ipsam fuga suscipit, voluptatem voluptatum deleniti possimus vitae id incidunt in eaque! Dolor odio minus, ad incidunt aut a obcaecati vero distinctio in suscipit doloribus laudantium iure adipisci. Dolor id neque, dolores cum sit asperiores esse hic accusamus eaque consequatur excepturi corporis voluptatem voluptatum quod aut facilis, iusto veniam architecto! Laborum ipsa numquam, consequatur tenetur, voluptatum eligendi debitis maxime accusantium fugit pariatur laboriosam quis delectus dicta saepe, quasi officiis nesciunt ut quidem quam mollitia vero ea repudiandae! Accusantium modi error deleniti expedita officia quisquam veritatis ipsum quaerat! Cupiditate reiciendis ducimus ex unde animi? Accusamus natus autem tempore enim nam at sed corporis illum magni sequi tenetur blanditiis quas, exercitationem consectetur repellendus neque doloribus numquam harum fugit dolorem perferendis aspernatur. Veniam, exercitationem? Quae eos itaque maiores deserunt obcaecati ducimus unde omnis placeat nulla officiis dolore voluptatum eaque consequuntur reiciendis eveniet natus dicta quia, cupiditate optio. Fuga esse laboriosam ea sapiente nulla eveniet expedita voluptas maiores minus corporis magnam illo repellendus, alias molestias commodi ipsum nisi enim quas ipsam, nemo molestiae ratione laudantium ex nesciunt. Sit, laborum? Provident corporis totam facere fugiat, modi voluptate placeat ratione, nisi dolore vitae, dignissimos quas quidem vel. Quisquam, eligendi! Unde?</p>
+</body>
+</html>
