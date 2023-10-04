@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 92vw;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça um escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores amet ea! Error dolores esse quia iusto laborum ratione iste odit, quasi suscipit, voluptate et aperiam impedit. Repudiandae, facere eum.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="sframe">Primeira página</a></li>
+        <li><a href="iframe002.html" target="sframe">Segunda página</a></li>
+        <li><a href="iframe003.html" target="sframe">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, voluptatum? Rerum accusamus in expedita ducimus natus deserunt voluptatum ipsum repudiandae architecto, rem incidunt, modi provident consequatur unde? Similique, quisquam laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio perspiciatis eveniet consectetur corrupti similique dolor expedita dolorem aliquid modi. Ducimus maiores magnam non cumque, autem assumenda temporibus debitis qui enim?</p>
+
+    <iframe id="tela" name="sframe" frameborder="1" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse nostrum aliquid dicta placeat dignissimos modi id voluptate repellendus nulla dolore eveniet assumenda maxime unde dolorum doloribus debitis, deserunt consequuntur?</p>">
+        <!-- No caso se for adicionar uma img tem que utilizar aspas simples '' no src -->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolor ab dolorum nisi autem, deleniti culpa itaque perferendis facere veritatis incidunt eligendi consequatur iusto nostrum? Atque magnam praesentium nesciunt doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui ab facilis similique ipsam facere dignissimos magnam expedita nostrum accusamus delectus laudantium, natus quod a est sapiente, enim itaque minima.</p>
+</body>
+</html>
